@@ -1,19 +1,43 @@
+h1{
+  font-size: 120%;
+}
+/* Header*/
+img{
+     opacity: 0.7;
+     width: 100%;
+}
+
+h2 {
+   position: absolute;
+   top:0%;
+   font-size: 300%;
+   right:10%;
+   text-transform: uppercase;
+   color: white;
+   font-family: Goudy Old Style;
+   text-shadow: 2px 2px #8c8c8c;
+
+}
+
 body{
-  width:70%;
+   background-image: url("bakgrunn1.jpg");
+}
+.hovedinnhold{
+  width:80%;
   position: absolute;
-  left: 15%;
+  left:10%;
 }
 
 .bakgrunn{
-  background-color: #f5f5f0;
+  background-color: white;
 }
 
 header{
-  position: fixed;
-  width:70%;
+  position: relative;
+  width:100%;
   top:0%;
 }
-
+/*Meny*/
 nav ul {
     list-style-type: none;
     width:100%;
@@ -31,7 +55,7 @@ nav li a, .oblig {
     display: block;
     color: white;
     text-align: center;
-    width:300px;
+    width:11em;
     padding: 10px 12px;
     text-decoration: none;
     font-variant: small-caps;
@@ -65,4 +89,17 @@ nav li.nedtrekk {
 
 .nedtrekk:hover .ddl {
     display: block;
+}
+
+aside{
+  width:20%;
+  height:50em;
+  align:left;
+  background-color: green;
+}
+
+footer{
+  width:100%;
+  height:50%;
+  background-color: grey;
 }
