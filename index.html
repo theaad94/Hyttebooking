@@ -55,7 +55,37 @@
 
 
       <aside>
+        <div id="booking">
         <h1> Booking </h1>
+          <input type="text" id="fnavn" placeholder="Fornavn" /> <br>
+	        <input type="text" id="enavn" placeholder="Etternavn"/> <br>
+	        <input type="text" id="mail" placeholder="Email"/> <br>
+	    <div id="hytte"> <input type="checkbox">Familiehytte</input>
+				  <input type="checkbox">Juniorhytte</input>
+				  <input type="checkbox">Firmahytte</input> </div> <br>
+	 Antall personer: <select id="antPers">
+						<option id="to">2</option>
+						<option id="tre">3</option>
+						<option id="fire">4</option>
+						<option id="fem">5</option>
+						<option id="seks">6</option>
+						<option id="syv">7</option>
+						<option id="aatte">8</option>
+						<option id="ni">9</option>
+						<option id="ti">10</option>
+						<option id="elleve">11</option>
+						<option id="tolv">12</option>
+						<option id="tretten">13</option>
+						<option id="fjorten">14</option>
+						<option id="femten">15</option>					
+					</select><br>
+	Ankomst: 	<input type="date" id="ankomst" placeholder="DD/MM/ÅÅÅÅ"><br>
+	Hjemreise: <input type="date" id="hjemreise" placeholder="DD/MM/ÅÅÅÅ"><br>
+	<br>
+      <button type="button" id="btn">Bestill</button>
+
+    	<p id="utskrift"></p>
+       </div>
         <iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fzuck&width=450&height=80&layout=standard&size=small&show_faces=true&appId"
         width=100% height=100% style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
