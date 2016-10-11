@@ -53,7 +53,7 @@
 
 
 			else{
-				document.getElementById("utskrift").innerHTML = melding;
+				alert(melding);
 			}
 
 
