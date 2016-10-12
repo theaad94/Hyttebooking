@@ -8,6 +8,8 @@
 </head>
 
 <body>
+
+  <!-- Javascript-kode for facebook-link-->
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -18,6 +20,7 @@
     }(document, 'script', 'facebook-jssdk'));
   </script>
 
+  <!-- Ramme for det midtstilte innholdet uten bildebakgrunn-->
   <div class="hovedinnhold">
       <header>
         <div class="image">
@@ -25,6 +28,7 @@
           <h2> Hyttebooking.no </h2>
         </div>
 
+        <!-- Meny-->
         <nav>
           <ul class="menu">
             <li><a class="one" href="index.html" target="self">Booking</a></li>
@@ -57,15 +61,20 @@
 
       <div class="box">
       <aside>
+
+        <!-- Skjema for booking-->
         <div id="booking">
         <h1>Lei hytte her</h1>
           <input type="text" id="fnavn" placeholder="Fornavn" /> <br>
           <input type="text" id="enavn" placeholder="Etternavn"/> <br>
           <input type="text" id="mail" placeholder="Email"/> <br>
-      <div id="hytte"> <input type="checkbox">Familiehytte</input><br>
-          <input type="checkbox">Juniorhytte</input><br>
-          <input type="checkbox">Firmahytte</input> </div> <br>
-   Antall personer: <select id="antPers">
+
+          <div id="hytte">
+            <input type="checkbox">Familiehytte</input><br>
+            <input type="checkbox">Juniorhytte</input><br>
+            <input type="checkbox">Firmahytte</input> </div> <br>
+
+            Antall personer: <select id="antPers">
             <option id="to">2</option>
             <option id="tre">3</option>
             <option id="fire">4</option>
@@ -81,22 +90,25 @@
             <option id="fjorten">14</option>
             <option id="femten">15</option>
           </select><br><br>
-  Ankomst:   <input type="date" id="ankomst" placeholder="DD/MM/ÅÅÅÅ"><br><br>
-  Hjemreise: <input type="date" id="hjemreise" placeholder="DD/MM/ÅÅÅÅ"><br>
-  <br>
-      <button type="button" id="btn">Bestill</button>
+          Ankomst:   <input type="date" id="ankomst" placeholder="DD/MM/ÅÅÅÅ"><br><br>
+          Hjemreise: <input type="date" id="hjemreise" placeholder="DD/MM/ÅÅÅÅ"><br>
+          <br>
 
-      <p id="utskrift"></p>
+        <button type="button" id="btn">Bestill</button>
+
+        <p id="utskrift"></p>
        </div>
 
        <br>
 
+        <!--iframe for facebook-link-->
         <iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fzuck&width=450&height=80&layout=standard&size=small&show_faces=true&appId"
         width=100% height=100% style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
       </aside>
     </div>
 
+      <!-- Hovedartikkel-->
       <div class="box1">
       <section>
         <img src="hytte2.jpg" class="img-hytte" alt="bedriftshytte" style="width:50%;">
