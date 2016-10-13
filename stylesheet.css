@@ -135,7 +135,7 @@ nav li.nedtrekk {
 }
 
 .box{
-  float: left;
+   float: left;
    margin-left: 0%;
    margin-top: 0%;
    padding: 0%;
@@ -154,6 +154,13 @@ nav li.nedtrekk {
   border: 2px solid green;
   margin-left: 0%;
   float: left;
+}
+
+.box3{
+  width:38%;
+  border: 2px solid green;
+  margin-left: 0%;
+  float: right;
 }
 aside{
   height:60em;
