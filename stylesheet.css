@@ -136,6 +136,11 @@ nav li.nedtrekk {
     display: block;
 }
 
+.omOss {
+    background-color: #2F4F4F;
+    color: white;
+  }
+
 .box{
    float: left;
    margin-left: 0%;
