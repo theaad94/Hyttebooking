@@ -20,25 +20,27 @@ h2 {
 
 h3{
   text-align: center;
+  color: #2F4F4F;
 }
 
 p.infotekst1{
-  font-size: 130%;
+  font-size: 100%;
   text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 0%;
+  padding-right: 5%;
 }
 
 p.infotekst{
-  font-size: 150%;
+  font-size: 100%;
   text-align: center;
-  padding-left: 40%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 #overskrifter{
   text-align: center;
-  font-size: 180%;
+  font-size: 120%;
+  color: #2F4F4F;
 }
 body{
    background-image: url("bakgrunn4.jpg");
@@ -55,7 +57,7 @@ body{
 
 .bakgrunn{
   background-color: white;
-  height:100%;
+  height:60em;
 }
 
 header{
@@ -139,32 +141,32 @@ nav li.nedtrekk {
    margin-left: 0%;
    margin-top: 0%;
    padding: 0%;
-   border: 2px solid blue;
+   border:1px solid grey;
 }
 
 .box1{
   margin-left: 0%;
   margin-top: 0%;
   padding: 0%;
-  border: 2px solid blue;
+  border:1px solid grey;
 }
 
 .box2{
-  width:38%;
-  border: 2px solid green;
+  width:36%;
+  border:1px solid grey;
   margin-left: 0%;
   float: left;
 }
 
 .box3{
-  width:38%;
-  border: 2px solid green;
+  width:36%;
+  border:1px solid grey;
   margin-left: 0%;
   float: right;
 }
 
 aside{
-  height:60em;
+  height:54em;
   width: 15em;
   text-align:left;
   background-color: #708090;
@@ -173,7 +175,7 @@ aside{
 #booking{
   margin-left: 0px;
   margin-right: 0px;
-  margin-top: 5px;
+  margin-top: 0px;
   font-size: 14px;
   border-style: solid;
   border-color: #2F4F4F;
@@ -182,8 +184,8 @@ aside{
 .img-hytte{
   opacity: 1;
   display: block;
-  margin-left: auto;
-  margin-right: auto
+  margin-top: 10px;
+  padding-left: 10px;
 }
 
 .littlepic{
@@ -200,6 +202,7 @@ aside{
   border-color: #2F4F4F;
 }
 
+
 footer{
   width:100%;
   height:auto;
@@ -208,10 +211,23 @@ footer{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.info{
+.info1{
   padding-top: 1%;
-  margin-left: 17%;
+  margin-left: 1%;
   float:left;
   text-align:center;
+}
 
+.info2{
+  padding-top: 1%;
+  margin-left: 23%;
+  float:left;
+  text-align:center;
+}
+
+.info3{
+  padding-top: 1%;
+  margin-left: 26%;
+  float:left;
+  text-align:center;
 }
