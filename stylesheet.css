@@ -46,15 +46,16 @@ body{
 }
 
 .hovedinnhold{
-  width:80%;
+  width:70%;
+  height:100%;
   position: absolute;
-  left:10%;
+  left:15%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .bakgrunn{
   background-color: white;
-  height:51em;
+  height:100%;
 }
 
 header{
@@ -149,13 +150,13 @@ nav li.nedtrekk {
 }
 
 .box2{
-  width:39.7%;
+  width:38%;
   border: 2px solid green;
   margin-left: 0%;
   float: left;
 }
 aside{
-  height:50em;
+  height:60em;
   text-align:left;
   background-color: #708090;
 }
@@ -170,7 +171,6 @@ aside{
 }
 
 .img-hytte{
-  width: 40%;
   opacity: 1;
   display: block;
   margin-left: auto;
