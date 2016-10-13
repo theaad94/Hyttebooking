@@ -162,8 +162,10 @@ nav li.nedtrekk {
   margin-left: 0%;
   float: right;
 }
+
 aside{
   height:60em;
+  width: 15em;
   text-align:left;
   background-color: #708090;
 }
@@ -189,6 +191,13 @@ aside{
   display: block;
   margin-left: auto;
   margin-right: auto
+}
+
+#map{
+  margin-left: 0px;
+  margin-right: 0px;
+  border-style: solid;
+  border-color: #2F4F4F;
 }
 
 footer{
