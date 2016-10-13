@@ -16,11 +16,33 @@ h2 {
    color: white;
    font-family: Goudy Old Style;
    text-shadow: 2px 2px #708090;
+}
 
+h3{
+  text-align: center;
+}
+
+p.infotekst1{
+  font-size: 130%;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+p.infotekst{
+  font-size: 150%;
+  text-align: center;
+  padding-left: 40%;
+  padding-right: 20%;
+}
+
+#overskrifter{
+  text-align: center;
+  font-size: 180%;
 }
 body{
    background-image: url("bakgrunn4.jpg");
-  background-repeat: no-repeat;
+   background-repeat: no-repeat;
 }
 
 .hovedinnhold{
@@ -57,7 +79,7 @@ li {
 
 li a {
     display: block;
-    color: #000000;
+    color: white;
     padding: 15px;
     text-decoration: none;
     font-size: 17px;
@@ -75,8 +97,6 @@ ul li ul
 ul li:hover ul{
   display: inline-block;
 }
-
-
 
 li a:hover:not(.active) {
     background-color: white;
@@ -127,6 +147,13 @@ nav li.nedtrekk {
   padding: 0%;
   border: 2px solid blue;
 }
+
+.box2{
+  width:39.7%;
+  border: 2px solid green;
+  margin-left: 0%;
+  float: left;
+}
 aside{
   height:50em;
   text-align:left;
@@ -145,6 +172,16 @@ aside{
 .img-hytte{
   width: 40%;
   opacity: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.littlepic{
+  opacity: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
 
 footer{
