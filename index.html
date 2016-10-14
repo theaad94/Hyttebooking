@@ -1,165 +1,244 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8"/>
-  <title>Hyttebooking Beitostølen</title>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <script src="booking.js"> </script>
-  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-</head>
+h1{
+  font-size: 120%;
+}
+/* Header*/
+img{
+     opacity: 0.7;
+     width: 100%;
+}
 
-<body>
+h2 {
+   position: absolute;
+   top:0%;
+   font-size: 300%;
+   right:10%;
+   text-transform: uppercase;
+   color: white;
+   font-family: Goudy Old Style;
+   text-shadow: 2px 2px #708090;
+}
 
-  <!-- Javascript-kode for facebook-link-->
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v2.8";
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
+h3{
+  text-align: center;
+  color: #2F4F4F;
+}
 
-  <!-- Ramme for det midtstilte innholdet uten bildebakgrunn-->
-  <div class="hovedinnhold">
-      <header>
-        <div class="image">
-          <img src="headeren.jpg" alt="header">
-          <h2> Hyttebooking.no </h2>
-        </div>
+p.infotekst1{
+  font-size: 100%;
+  text-align: center;
+  padding-left: 0%;
+  padding-right: 5%;
+}
 
-        <!-- Meny-->
-        <nav>
-          <ul class="menu">
-            <li><a class="one" href="index.html" target="self">Booking</a></li>
-            <li class="nedtrekk">
-              <a href="oblig1.html" class="oblig">Kart</a>
-            </li>
-            <li class="nedtrekk">
-              <a href="oblig2.html" class="oblig">Våre Hytter</a>
-              <div class="ddl">
-                <a href="hyttebooking.html">Familiehytter</a>
-                <a href="oppgaver.pdf">Bedriftshytter</a>
-                <a href="oppgaver.pdf">Juniorhytter</a>
-              </div>
-            </li>
-            <li class="nedtrekk">
-              <a href="oblig3.html" class="oblig">Kontakt oss</a>
-            </li>
-            <li class="nedtrekk">
-              <a href="oblig4.html" class="oblig">Tilbud</a>
-              <div class="ddl">
-                <a href="oppg1.pdf">Juleferien 2016</a>
-                <a href="oppg2.pdf">Vinterferien 2017</a>
-                <a href="oppg3.pdf">Påskeferien 2017</a>
-              </div>
-            </li>
-            <li style="float:right"><a class="omOss" href="#omoss">Om oss</a></li>
-        </nav>
-      </header>
+p.infotekst{
+  font-size: 100%;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
 
-    <div class="bakgrunn">
+#overskrifter{
+  text-align: center;
+  font-size: 120%;
+  color: #2F4F4F;
+}
+body{
+   background-image: url("bakgrunn4.jpg");
+   background-repeat: no-repeat;
+}
 
-      <div class="box">
-      <aside>
+.hovedinnhold{
+  width:70%;
+  height:100%;
+  position: absolute;
+  left:15%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
-        <!-- Skjema for booking-->
-        <div id="booking">
-        <h1>Lei hytte her</h1>
-          <input type="text" id="fnavn" placeholder="Fornavn" /> <br>
-          <input type="text" id="enavn" placeholder="Etternavn"/> <br>
-          <input type="text" id="mail" placeholder="Email"/> <br>
+.bakgrunn{
+  background-color: white;
+  height:60em;
+}
 
-          <div id="hytte">
-            <input type="checkbox">Familiehytte</input><br>
-            <input type="checkbox">Juniorhytte</input><br>
-            <input type="checkbox">Firmahytte</input> </div> <br>
+header{
+  position: relative;
+  width:100%;
+  top:0%;
+}
+/*Meny*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #708090;
+}
 
-            Antall personer: <select id="antPers">
-            <option id="to">2</option>
-            <option id="tre">3</option>
-            <option id="fire">4</option>
-            <option id="fem">5</option>
-            <option id="seks">6</option>
-            <option id="syv">7</option>
-            <option id="aatte">8</option>
-            <option id="ni">9</option>
-            <option id="ti">10</option>
-            <option id="elleve">11</option>
-            <option id="tolv">12</option>
-            <option id="tretten">13</option>
-            <option id="fjorten">14</option>
-            <option id="femten">15</option>
-          </select><br><br>
-          Ankomst:   <input type="date" id="ankomst" placeholder="DD/MM/ÅÅÅÅ"><br><br>
-          Hjemreise: <input type="date" id="hjemreise" placeholder="DD/MM/ÅÅÅÅ"><br>
-          <br>
+li {
+    float: left;
+    text-align: center;
+}
 
-        <button type="button" id="btn">Bestill</button>
-
-        <p id="utskrift"></p>
-       </div>
-
-       <br>
-
-       <div id="map" style="width:235px;height:235px;"></div>
-
-       <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+li a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+}
 
 
-       <br>
+ul li ul
+    {
+    display:none;
+    position:absolute;
+    background-color: #708090;
+    }
 
-        <!--iframe for facebook-link-->
-        <h1>Følg oss på Facebook</h1>
-        <iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fzuck&width=450&height=80&layout=standard&size=small&show_faces=true&appId"
-        width=100% height=100% style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-       
+
+ul li:hover ul{
+  display: inline-block;
+}
+
+li a:hover:not(.active) {
+    background-color: white;
+    color: black;
+}
+
+.active {
+    background-color: #708090;
+    color: black;
+}
+
+nav li.nedtrekk {
+    display: inline-block;
+      margin-left: 0px;
+}
+
+.ddl{
+    display: none;
+    position: absolute;
+    background-color: #708090;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.ddl a {
+    color: #f2f2f2;
+    padding: 5px 6px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.nedtrekk:hover .ddl {
+    display: block;
+}
+
+.omOss {
+    background-color: #2F4F4F;
+    color: white;
+  }
+
+.box{
+   float: left;
+   margin-left: 0%;
+   margin-top: 0%;
+   padding: 0%;
+   border:1px solid grey;
+}
+
+.box1{
+  margin-left: 0%;
+  margin-top: 0%;
+  padding: 0%;
+  border:1px solid grey;
+}
+
+.box2{
+  width:36%;
+  border:1px solid grey;
+  margin-left: 0%;
+  float: left;
+}
+
+.box3{
+  width:36%;
+  border:1px solid grey;
+  margin-left: 0%;
+  float: right;
+}
+
+aside{
+  height:auto;
+  width: 15em;
+  text-align:left;
+  background-color: #708090;
+}
+
+#booking{
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  font-size: 14px;
+  border-style: solid;
+  border-color: #2F4F4F;
+}
+
+.img-hytte{
+  opacity: 1;
+  display: block;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.littlepic{
+  opacity: 1;
+  display: block;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#map{
+  margin-left: 0px;
+  margin-right: 0px;
+  border-style: solid;
+  border-color: #2F4F4F;
+}
 
 
-      </aside>
-    </div>
+footer{
+  width:100%;
+  height:auto;
+  background-color: #708090;
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
-      <!-- Hovedartikkel-->
-      <h1>Aktuelt</h1>
-      <div class="box1">
-        <section>
-          <img src="44.jpg" class="img-hytte" alt="bedriftshytte" style="width:70%;">
-          <h1 id="overskrifter"> Legg vinterferien 2017 på fjellet med familien </h1>
-          <p class="infotekst"> Ta med hele familien på fjellet denne vinteren og nyt stillheten og knitring fra peisen. Familie hytter fra 395,- per døgn. <a href="oppg2.pdf"> Les mer...</a></p>
-        </section>
+.info1{
+  padding-top: 1%;
+  margin-left: 1%;
+  float:left;
+  text-align:center;
+}
 
-        <div class="box2">
-          <h3> Hytter for grupper og firmaer </h3>
-            <img src="hytte2.jpg" class="littlepic" alt="familiehytte" style="width:60%;">
-            <p class="infotekst1"> Når mange skal på tur sammen trenger man større plass. Her er vårt utvalg av store hytter til leie. <a href="oppg2.pdf"> Les mer...</a></p>
-        </div>
+.info2{
+  padding-top: 1%;
+  margin-left: 23%;
+  float:left;
+  text-align:center;
+}
 
-        <div class="box3">
-          <h3> Hyggelig week-end hyttetur for to </h3>
-          <img src="hy.jpg" class="littlepic" alt="familiehytte" style="width:60%;" >
-          <p class="infotekst1"> Ta med din kjære på en hyggelig hyttetur blant vakre omgivelser med fine turmuligheter. <br> <a href="oppg2.pdf"> Les mer...</a></p>
-        </div>
-      </div>
-
-      <footer>
-        <div class="info1">
-          <p>Email: post@hyttebooking.no<br>
-          Tlf: +47 47631866</p>
-        </div>
-
-        <div class="info2">
-          <p>Hyttebooking AS <br> Beitovegen 7 <br> N-4316 Beitostølen</p>
-        </div>
-
-        <div class="info3">
-            <br><a href="oppg1.pdf">Juleferien 2016</a><br>
-            <a href="oppg2.pdf">Vinterferien 2017</a><br>
-            <a href="oppg3.pdf">Påskeferien 2017</a><br>
-        </div>
-      </footer>
-
-    </div>
-  </div>
-</body>
-</html>
+.info3{
+  padding-top: 1%;
+  margin-left: 26%;
+  float:left;
+  text-align:center;
+}
