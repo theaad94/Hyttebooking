@@ -236,3 +236,41 @@ footer{
   float:left;
   text-align:center;
 }
+
+@media	only	screen	and	(max-width	:	480px)	{
+  .box{
+    display: none;
+  }
+
+  h2{
+    margin-top: 2%;
+    font-size: 100%;
+  }
+  .img-hytte, .littlepic{
+    width:100%;
+  }
+
+  p.infotekst,p.infotekst1{
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: justify;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  .box2, .box3{
+    width:100%;
+  }
+
+  .info1, .info3{
+    width:100%;
+    font-size: 60%;
+  }
+  .info2{
+    margin-left: 1%;
+    width:100%;
+    font-size: 60%;
+  }
+ }
