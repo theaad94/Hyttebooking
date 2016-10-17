@@ -1,5 +1,5 @@
 
-h2{
+h1{
   font-size: 120%;
 }
 /* Header*/
@@ -8,7 +8,7 @@ img{
      width: 100%;
 }
 
-h1 {
+h2 {
    position: absolute;
    top:0%;
    font-size: 300%;
@@ -242,48 +242,11 @@ footer{
   text-align:center;
 }
 
-@media	only	screen	and	(max-width	:	640px)	{
-  .box{
-    display: none;
-  }
+.print{
+  display: none;
+}
 
-  h2{
-    margin-top: 2%;
-    font-size: 100%;
-  }
-  .img-hytte, .littlepic{
-    width:100%;
-  }
 
-  p.infotekst,p.infotekst1{
-    padding-left: 2%;
-    padding-right: 2%;
-    text-align: justify;
-  }
-
-  h1{
-    text-align: center;
-  }
-
-  .box2, .box3{
-    width:100%;
-  }
-
-  .info1, .info3{
-    width:100%;
-    font-size: 60%;
-  }
-  .info2{
-    margin-left: 1%;
-    width:100%;
-    font-size: 60%;
-  }
-
-  .hovedinnhold{
-    width:100%;
-    left:0%;
-  }
- }
 
 
 @media screen and (max-width : 768px){
@@ -329,3 +292,84 @@ footer{
 
 
 }
+
+
+@media  only  screen  and (max-width  : 640px)  {
+  .box{
+    display: none;
+  }
+
+  h2{
+    margin-top: 2%;
+    font-size: 100%;
+  }
+  .img-hytte, .littlepic{
+    width:100%;
+  }
+
+  p.infotekst,p.infotekst1{
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: justify;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  .box2, .box3{
+    width:100%;
+  }
+
+  .info1, .info3{
+    width:100%;
+    font-size: 60%;
+  }
+  .info2{
+    margin-left: 1%;
+    width:100%;
+    font-size: 60%;
+  }
+
+  .hovedinnhold{
+    width:100%;
+    left:0%;
+  }
+ }
+
+
+ @media print{
+  .bilde{
+    display: none;
+  }
+
+  h2{
+    color: black;
+    font-size: 40px;
+    margin-top: 0px;
+  }
+
+  .aktuelt{
+    display: none;
+  }
+
+  aside{
+    display: none;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .info3{
+    display: none;
+  }
+
+  .box2, .box3{
+    width: 49%;
+
+  }
+
+ }
+
+
