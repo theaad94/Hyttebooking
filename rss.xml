@@ -1,0 +1,41 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Hyttebooking</title>
+  <link>LEGG LINK TIL SIDEN HER!</link>
+  <description>En side for booking av hytter på Beitostølen</description>
+  <item>
+    <title>Booking</title>
+    <link>LINK TIL BOOKINGSIDEN</link>
+    <description>På denne siden kan man booke en hytte</description>
+  </item>
+  <item>
+    <title>Kart</title>
+    <link>LINK TIL KARTSIDEN</link>
+    <description>På denne siden kan man se kart over beitostølen</description>
+  </item>
+  <item>
+    <title>Våre hytter</title>
+    <link>LINK TIL HYTTESIDEN</link>
+    <description>På denne siden kan man se våre forskjellige hytter</description>
+  </item>
+  <item>
+    <title>Kontakt oss</title>
+    <link>LINK TIL KONTAKT OSS SIDEN</link>
+    <description>På denne siden finner du kontaktinfo</description>
+  </item>
+  <item>
+    <title>Tilbud</title>
+    <link>LINK TIL TILBUDSIDEN</link>
+    <description>På denne siden kan man se våre tilbud</description>
+  </item>
+  <item>
+    <title>Om oss</title>
+    <link>LINK TIL OM OSS SIDEN</link>
+    <description>På denne siden kan man se info om Hyttebooking AS</description>
+  </item>
+</channel>
+
+</rss> 
