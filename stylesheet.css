@@ -246,6 +246,24 @@ footer{
   display: none;
 }
 
+.rss{
+  width: 30px;
+  height: 30px;
+  float: right;
+}
+
+.face{
+  width: 30px;
+  height: 30px;
+  float: right;
+}
+
+.twitter{
+  width: 30px;
+  height: 30px;
+  float: right;
+}
+
 
 
 
@@ -337,7 +355,6 @@ footer{
   }
  }
 
-
  @media print{
   .bilde{
     display: none;
@@ -348,6 +365,8 @@ footer{
     font-size: 40px;
     margin-top: 0px;
   }
+
+
 
   .aktuelt{
     display: none;
@@ -368,6 +387,18 @@ footer{
   .box2, .box3{
     width: 49%;
 
+  }
+
+  .rss{
+    display: none;
+  }
+
+  .face{
+    display: none;
+  }
+
+  .twitter{
+    display: none;
   }
 
  }
