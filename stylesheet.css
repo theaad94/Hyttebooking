@@ -396,6 +396,14 @@ footer{
   .twitter{
     display: none;
   }
+   
+  h2{
+    color: black;
+  }
+
+  h1{
+    color: black;
+  }
 
  }
 
