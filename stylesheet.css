@@ -1,3 +1,6 @@
+
+/* ****** Denne CSS-filen inneholder CSS for pc-skjerm, mobil, iPad og print*****/
+
 h2{
   font-size: 120%;
 }
@@ -7,6 +10,7 @@ img{
      width: 100%;
 }
 
+/*Tekst i header*/
 h1 {
    position: absolute;
    top:0%;
@@ -17,7 +21,13 @@ h1 {
    font-family: Goudy Old Style;
    text-shadow: 2px 2px #708090;
 }
+header{
+  position: relative;
+  width:100%;
+  top:0%;
+}
 
+/*Tekst i små-artikler*/
 h3{
   text-align: center;
   color: #2F4F4F;
@@ -42,11 +52,14 @@ p.infotekst{
   font-size: 120%;
   color: #2F4F4F;
 }
+
+/*Bakgrunnsbilde på hele siden*/
 body{
    background-image: url("bakgrunn4.jpg");
    background-repeat: no-repeat;
 }
 
+/*Det sentrerte innholder*/
 .hovedinnhold{
   width:70%;
   height:auto;
@@ -56,11 +69,6 @@ body{
   background-color: white;
 }
 
-header{
-  position: relative;
-  width:100%;
-  top:0%;
-}
 /*Meny*/
 ul {
     list-style-type: none;
@@ -84,14 +92,12 @@ li a {
     font-size: 17px;
 }
 
-
 ul li ul
     {
     display:none;
     position:absolute;
     background-color: #708090;
     }
-
 
 ul li:hover ul{
   display: inline-block;
@@ -137,6 +143,7 @@ nav li.nedtrekk {
     color: white;
   }
 
+/*Bokser rundt artiklene*/
 .box{
    float: left;
    margin-left: 0%;
@@ -173,6 +180,7 @@ aside{
   background-color: #708090;
 }
 
+/*Booking-skjema*/
 #booking{
   margin-left: 0px;
   margin-right: 0px;
@@ -182,6 +190,7 @@ aside{
   border-color: #2F4F4F;
 }
 
+/*Største bildet*/
 .img-hytte{
   opacity: 1;
   display: block;
@@ -193,6 +202,7 @@ aside{
   width:70%;
 }
 
+/* Småbilder i artiklene*/
 .littlepic{
   opacity: 1;
   display: block;
@@ -211,6 +221,12 @@ aside{
   border-color: #2F4F4F;
 }
 
+iframe{
+  width:100%;
+  height:100%;
+  border-style: none;
+  overflow: hidden;
+}
 
 footer{
   width:100%;
@@ -220,6 +236,7 @@ footer{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/*Info i footeren*/
 .info1{
   padding-top: 1%;
   margin-left: 1%;
@@ -240,6 +257,8 @@ footer{
   float:right;
   text-align:center;
 }
+
+/*Bilder/logoer */
 
 .print{
   display: none;
@@ -264,7 +283,7 @@ footer{
 }
 
 
-
+/* ***** CSS for iPad ****** */
 
 @media screen and (max-width : 768px){
   aside{
@@ -274,12 +293,10 @@ footer{
   .box2{
     width: 49%;
     border-style: none;
-
   }
 
   .box3{
     width: 49%;
-
   }
 
  h2{
@@ -306,10 +323,9 @@ footer{
   left: 0%;
  }
 
-
-
 }
 
+/* ******CSS for mobilskjerm***** */
 
 @media  only  screen  and (max-width  : 640px)  {
   .box{
@@ -354,15 +370,22 @@ footer{
   }
  }
 
+/* ******CSS for print****** */
  @media print{
   .bilde{
     display: none;
   }
 
-  h2{
+  h1{
     color: black;
     font-size: 40px;
     margin-top: 0px;
+  }
+  h2, h3{
+    color: black;
+  }
+  #overskrifter{
+    color:black;
   }
   .aktuelt{
     display: none;
@@ -382,7 +405,6 @@ footer{
 
   .box2, .box3{
     width: 49%;
-
   }
 
   .rss{
@@ -396,20 +418,4 @@ footer{
   .twitter{
     display: none;
   }
-   
-  h2{
-    color: black;
-  }
-
-  h1{
-    color: black;
-  }
-
- }
-
- iframe{
-   width:100%;
-   height:100%;
-   border-style: none;
-   overflow: hidden;
  }
